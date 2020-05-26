@@ -1,10 +1,10 @@
-class Empleado:
+class agregar_Empleado:
     def __init__(self,idEmpleado,Nombre,Direccion):
         self.idEmpleado = idEmpleado
         self.Nombre = Nombre
         self.Direccion = Direccion 
 
-    def AgregarEmpleado(self):
+    def Agregar_Empleado(self):
         print ("Registro de Empleado")
         archivo = open("./archivos/empleados.txt","a",encoding="utf8")
 
