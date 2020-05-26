@@ -15,10 +15,9 @@ class Empleado:
         print("Direccion de Empleado")
         direccion = input("> ")
         archivo.write(idempleado + "|" + nombre + "|" + direccion)
-        
         archivo.close()
 
 
-    def consultar_empleado(self):
+    def consulta_de_empleado(self):
         archivo = open("./archivos/empleados.txt",encoding="utf8")
         print(archivo.read())
