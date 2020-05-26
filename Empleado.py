@@ -1,23 +1,24 @@
-class Info_Empleado:
+class Empleado:
     def __init__(self,idEmpleado,Nombre,Direccion):
         self.idEmpleado = idEmpleado
         self.Nombre = Nombre
         self.Direccion = Direccion 
 
-    def AgregarEmpleado():
+    def AgregarEmpleado(self):
         print("Agregar un empelado")
         archivo = open("./archivos/empleados.txt","a",encoding="utf8")
 
         print("Clave del Empleado Nuevo")
-        Idempleado = input("Id \n")
+        idempleado = input("Id \n")
         print("Nombre del Empleado:\n")
-        Nombre = input("Nombre: \n")
-        print("Direccion del Empleado")
-        Direccion_Empleado = input("> ")
+        nombre = input("Nombre: \n")
+        print("Direccion de Empleado")
+        direccion = input("> ")
         archivo.write(idempleado + "|" + nombre + "|" + direccion)
+        
         archivo.close()
 
 
-    def consultar_empleado():
+    def consultar_empleado(self):
         archivo = open("./archivos/empleados.txt",encoding="utf8")
         print(archivo.read())
