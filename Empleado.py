@@ -4,7 +4,7 @@ class Empleado:
         self.Nombre = Nombre
         self.Direccion = Direccion 
 
-    def AgregarEmpleado():
+    def AgregarEmpleado(self):
         print ("Registro de Empleado")
         archivo = open("./archivos/empleados.txt","a",encoding="utf8")
 
@@ -16,39 +16,9 @@ class Empleado:
         direccion = input("> ")
 
         archivo.write(idempleado + "|" + nombre + "|" + direccion)
-        
         archivo.close()
 
 
-    def consultar_empleado():
+    def consultar_empleado(self):
         archivo = open("./archivos/empleados.txt",encoding="utf8")
         print(archivo.read())
-
-
-
-
-    def Actualizar_Contactos(self):
-        Nombre = input("Inserta el nombre que quieres buscar: ")
-        No_Encontrado = True
-        for elemento in self.lista:
-            separar = elemento.split('/')
-            if Nombre in separar[0]:
-                print("Nombre: " + separar[0])
-                print("idEmpleado: " + separar[1])
-                print("Direccion: " + separar[2])
-                print("************************")
-            No_Encontrado = False 
-        if No_Encontrado == True: 
-            print("Contacto no encontrado ")
-
-
-    def eliminar(self):
-        Nombre = input("Inserta el contacto  que quieres eliminar:")
-        No_Encontrado = True
-        for elemento in self.lista:
-            separar = elemento.split('/')
-            if Nombre in separar[0]:
-                self.lista.remove(elemento)
-                No_Encontrado = False
-        if No_Encontrado == True:
-            print("Contacto no No_Encontrado")
