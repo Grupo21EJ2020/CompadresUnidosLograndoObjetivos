@@ -11,26 +11,24 @@ if Menu == 1:
             nombre =""
             direccion = ""
             nuevoEmpleado1 = Empleado_agregar(idEmpleado, nombre, direccion)
-            nuevoEmpleado1.Agregar_Empleado()
+            nuevoEmpleado1.Empleado()
             print ("----ELEGIR OTRA OPCION----\n" )
             Menu = int(input("1.Empleado \n2.Curso \n3.Tema \n4.Video \n:"))
 
         if submenu == 2: 
-            print ("-------DATOS DE EMPLEADOS------:")
-            idEmpleado =""
-            nombre =""
-            direccion = ""
-            nuevoEmpleado1 = Empleado_agregar(idEmpleado, nombre, direccion)
-            nuevoEmpleado1.Agregar_Empleado()
+            print ("-------BORRAR EMPLEADOS------: \n Ingresa el ID del empleado para borrar")
+            idEmpleado= ""
+            nombre= ""
+            direccion= ""
+            deleteEmpleado1 = Empleado_agregar(idEmpleado,nombre,direccion)
+            deleteEmpleado1.eliminar_empleado()
             print ("----ELEGIR OTRA OPCION----\n" )
             Menu = int(input("1.Empleado \n2.Curso \n3.Tema \n4.Video \n:"))
         if submenu == 3: 
-            print ("-------DATOS DE EMPLEADOS------:")
+            print ("-------D EMPLEADOS------:")
             idEmpleado =""
             nombre =""
             direccion = ""
-            nuevoEmpleado1 = Empleado_agregar(idEmpleado, nombre, direccion)
-            nuevoEmpleado1.Agregar_Empleado()
             print ("----ELEGIR OTRA OPCION----\n" )
             Menu = int(input("1.Empleado \n2.Curso \n3.Tema \n4.Video \n:"))   
         elif submenu == 4:
