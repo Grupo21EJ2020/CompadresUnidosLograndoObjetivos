@@ -1,4 +1,4 @@
-class agregar_Empleado:
+class Empleado_agregar:
     def __init__(self,idEmpleado,Nombre,Direccion):
         self.idEmpleado = idEmpleado
         self.Nombre = Nombre
@@ -6,7 +6,7 @@ class agregar_Empleado:
 
     def Agregar_Empleado(self):
         archivo = open("./archivos/empleados.txt","a",encoding="utf8")
-        idempleado = input("ID EMPLEADO:  \n")
+        idempleado = input("ID EMPLEADO: \n")
         print("NOMBRE DEL EMPLEADO: ")
         nombre = input("")
         print("DIRECCION:")
