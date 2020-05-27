@@ -12,11 +12,11 @@ if opcionInicial == 1:
         segundaOpcion = int(input("1. Agregar \n2. Borrar \n3. Modificar \n4. Ver Todo \n5. Ver Empleado Especifico \n:"))
         if segundaOpcion == 1: 
             print ("A continuacion de pedire algunos datos requeridos para agregar empleados:")
-            idEmpleado = int (input ("dame el id del empleado \n: "))
-            nombre = input ("dame el nombre de tu empleado \n:")
-            direccion = input ("ahora dame la direccion \n:")
-            nuevoEmpleado = agregar_Empleado(idEmpleado, Nombre, Direccion)
-            nuevoEmpleado.Agregar_Empleado(idEmpleado, Nombre, Direccion)
+            idEmpleado ="\n"
+            nombre ="\n"
+            direccion = "\n"
+            nuevoEmpleado1 = agregar_Empleado(idEmpleado, nombre, direccion)
+            nuevoEmpleado1.Agregar_Empleado()
             print ("Tu empleado a sido agregado")
             print ("te mostrare el menu inicial. \nElige una opcion" )
             opcionInical = int(input("1. Empleado \n2. Curso \n3. Tema \n4. Video \n:"))

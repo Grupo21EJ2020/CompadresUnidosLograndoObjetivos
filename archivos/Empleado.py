@@ -5,19 +5,15 @@ class agregar_Empleado:
         self.Direccion = Direccion 
 
     def Agregar_Empleado(self):
-        print ("Registro de Empleado")
         archivo = open("./archivos/empleados.txt","a",encoding="utf8")
-
-        print("Clave del Empleado Nuevo")
-        idempleado = input("Id \n")
-        print("Nombre del Empleado:\n")
-        nombre = input("Nombre: \n")
-        print("Direccion del Empleado")
-        direccion = input("> ")
-
-        archivo.write(idempleado + "|" + nombre + "|" + direccion)
+        idempleado = input("ID EMPLEADO:  \n")
+        print("NOMBRE DEL EMPLEADO: ")
+        nombre = input("")
+        print("DIRECCION:")
+        direccion = input("")
+        archivo.write(idempleado + "|" + nombre + "|" + direccion + "\n")
         archivo.close()
-
+    
 
     def consultar_empleado(self):
         archivo = open("./archivos/empleados.txt",encoding="utf8")
