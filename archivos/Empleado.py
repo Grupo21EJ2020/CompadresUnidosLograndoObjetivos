@@ -59,7 +59,4 @@ class Empleado_agregar:
         otro = open("./archivos/empleados.txt","w",encoding="utf8")    
         otro.write(chain)    
         otro.close() 
-        archivo = open("./archivos/empleados.txt","r",encoding="utf8")
-        chain = archivo.read()
-        chain = chain.replace("",self.__idEmpleado + "|" + self.__Nombre + "|" + self.__Direccion)    
-        archivo.close() 
+        
