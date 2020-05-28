@@ -30,18 +30,18 @@ class Curso_agregar:
         self.__Id_empleado=valor
 
 
-    def Empleado(self):
+    def curso(self):
         archivo = open("./archivos/curso.txt","a",encoding="utf8")
         archivo.write(self.__idcurso + "|" + self.__Descripcion + "|" + self.__Id_empleado + "\n")
         archivo.close()
     
 
-    def consultar_empleado(self):
+    def consultar_curso(self):
         archivo = open("./archivos/curso.txt","r",encoding="utf8")
         print(archivo.read())
 
     
-    def eliminar_empleado(self):
+    def eliminar_curso(self):
         f = open("./archivos/curso.txt","r",encoding="utf8")
         chain = f.read() 
         chain = chain.replace(self.__idcurso + "|" + self.__Descripcion + "|" + self.__Id_empleado,"")    
