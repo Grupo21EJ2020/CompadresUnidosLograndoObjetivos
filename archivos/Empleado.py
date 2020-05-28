@@ -42,10 +42,24 @@ class Empleado_agregar:
 
     
     def eliminar_empleado(self):
-        f = open("./archivos/empleados.txt","r",encoding="utf8")
-        chain = f.read()    #guardamos su contenido en una variable
+        archivo = open("./archivos/empleados.txt","r",encoding="utf8")
+        chain = archivo.read()
         chain = chain.replace(self.__idEmpleado + "|" + self.__Nombre + "|" + self.__Direccion,"")    
-        f.close()   
+        archivo.close()   
         otro = open("./archivos/empleados.txt","w",encoding="utf8")    
         otro.write(chain)    
         otro.close()   
+
+
+    def actualizar_empleado(self):
+        archivo = open("./archivos/empleados.txt","r",encoding="utf8")
+        chain = archivo.read()
+        chain = chain.replace(self.__idEmpleado + "|" + self.__Nombre + "|" + self.__Direccion,"")    
+        archivo.close()   
+        otro = open("./archivos/empleados.txt","w",encoding="utf8")    
+        otro.write(chain)    
+        otro.close() 
+        archivo = open("./archivos/empleados.txt","r",encoding="utf8")
+        chain = archivo.read()
+        chain = chain.replace("",self.__idEmpleado + "|" + self.__Nombre + "|" + self.__Direccion)    
+        archivo.close() 
