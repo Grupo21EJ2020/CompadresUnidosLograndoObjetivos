@@ -1,0 +1,30 @@
+ def  __init__ ( self , idEmpleado , Nombre , Direccion ):
+        auto . idEmpleado  =  idEmpleado
+        auto . Nombre  =  Nombre
+        auto . Direccion  =  Direccion 
+
+    def  Empleado ( auto ):
+        archivo  =  abierto ( "./archivos/empleados.txt" , "a" , codificación = "utf8" )
+        idempleado  =  input ( "ID EMPLEADO: \ n " )
+        print ( "NOMBRE DEL EMPLEADO:" )
+        nombre  =  input ( "" )
+        print ( "DIRECCION:" )
+        direccion  =  input ( "" )
+        archivo . escribir ( idempleado  +  "|"  +  nombre  +  "|"  +  direccion  +  " \ n " )
+        archivo . cerrar ()
+    
+
+    def  consultar_empleado ( self ):
+        archivo  =  abierto ( "./archivos/empleados.txt" , codificación = "utf8" )
+        imprimir ( archivo . leer ())
+
+    
+    def  eliminar_empleado ( self ):
+        archivo  =  abierto ( "./archivos/empleados.txt" , "a" , codificación = "utf8" )
+        idempleado  =  input ( "ID EMPLEADO: \ n " )
+        print ( "NOMBRE DEL EMPLEADO:" )
+        nombre  =  input ( "" )
+        print ( "DIRECCION:" )
+        direccion  =  input ( "" )
+        archivo .( idempleado , nombre , direccion )
+        archivo . cerca
